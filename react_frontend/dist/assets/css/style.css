@@ -1,0 +1,50 @@
+.navbar img{
+	height:50px;
+}
+.navbar-nav{
+	float:right;
+}
+.panel{
+	border: none;
+}
+
+
+#footer  {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#footer .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+#footer .container .credit {
+  margin: 20px 0;
+}
+
+a, a:active, a:focus {
+outline: none;
+}
+
+th, td{
+	width: 33% !important;
+}
+
+.addBtn, .importBtn{
+	width: 120px;
+}
+
+.importBtn{
+	margin-left: 20px;
+}
+.row{
+	margin-top: 10px;
+}
+.form-group{
+	margin-right: 10px;
+}
