@@ -7,6 +7,9 @@
 .panel{
 	border: none;
 }
+.navbar-brand{
+	background-color: '#fff';
+}
 
 
 #footer  {
