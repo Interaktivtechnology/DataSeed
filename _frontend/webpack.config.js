@@ -1,14 +1,18 @@
 const path = require('path');
 const webpack = require('webpack');
-
 module.exports = {
   entry: './index.js',
+
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   devServer: {
-      historyApiFallback: true
+    colors: true,
+    historyApiFallback: true,
+    inline: false,
+    port: 3000,
+    hot: true
   },
   module: {
     loaders: [
@@ -19,7 +23,7 @@ module.exports = {
       {
           test: /\.js$/,
           exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
-          loader: 'babel'
+          loader: 'babel-loader'
       },
       {   test: /\.css$/, 
           loader: 'style-loader!css-loader?sourceMap' 
@@ -29,9 +33,8 @@ module.exports = {
           loader: 'url-loader?limit=50000&name=[path][name].[ext]'
       }
     ]
-  }
-}
-
+  },
+};
 
 var src = path.join(__dirname, '..', '..', 'src')
 var fs = require('fs')
